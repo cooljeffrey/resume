@@ -13,7 +13,7 @@ class App extends Component {
     this.state = { state: "pending", data: null, error: null };
   }
 
-  componentWillMount() {
+  componentDidMount() {
     const username = this.props.username;
     this.fetchProfile(username)
       .then(response => {
