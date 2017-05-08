@@ -15,16 +15,19 @@ class App extends Component {
 
   componentDidMount() {
     const username = this.props.username;
+
+    const _this = this;
+    
     this.fetchProfile(username)
       .then(response => {
-        this.setState({
+        _this.setState({
           state: "loaded",
           data: response.data
         });
       })
       .catch(function(error) {
         console.log(error);
-        this.setState({
+        _this.setState({
           state: "error",
           error: error
         });
