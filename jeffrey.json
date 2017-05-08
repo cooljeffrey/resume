@@ -1,0 +1,202 @@
+{
+	"id": 0,
+	"username": "cooljeffrey",
+	"firstName": "Jeffrey",
+	"lastName": "YU",
+	"status": 0,
+	"description": "Full Stack Developer",
+	"contacts": {
+		"email": "cooljeffrey AT gmail.com",
+		"mobile": "",
+		"phone": "",
+		"website": "https://cooljeffrey.github.io"
+	},
+	"profileImageUrls": {
+		"square200": "https://www.gravatar.com/avatar/c4d72b0e99db2592a45c65a92c320612?size=200",
+		"square400": "https://www.gravatar.com/avatar/c4d72b0e99db2592a45c65a92c320612?size=400"
+	},
+	"social": {
+		"github": {
+			"username": "cooljeffrey",
+			"url": "https://github.com/cooljeffrey",
+			"iconUrl": ""
+		},
+		"linkedin": {
+			"username": "",
+			"url": "https://www.linkedin.com/in/cooljeffrey/",
+			"iconUrl": ""
+		}
+	},
+	"summary": "I’m an experienced software engineer in software development industry. I have rich experience on software design, development and testing, with knowledge of several coding languages like java, javascript, php, c# … and have strong agile and SOA practice.",
+	"skills": [{
+		"title": "JAVA",
+		"level": "Expert",
+		"years": "12",
+		"rating": 90
+	}, {
+		"title": "Javascript, jQuery & AngularJS",
+		"level": "Expert",
+		"years": "5",
+		"rating": 90
+	}, {
+		"title": "HTML5 & CSS3",
+		"level": "Pro",
+		"years": "6",
+		"rating": 80
+	}, {
+		"title": "C#, ASP.NET MVC",
+		"level": "Pro",
+		"years": "3",
+		"rating": 80
+	}, {
+		"title": "PHP, Symfony, Laravel & Drupal",
+		"level": "Expert",
+		"years": "3",
+		"rating": 90
+	}, {
+		"title": "ReactJS",
+		"level": "Pro",
+		"years": "1",
+		"rating": 70
+	}, {
+		"title": "iOS & Android",
+		"level": "Pro",
+		"years": "2",
+		"rating": 70
+	}],
+	"location": {
+		"country": "Australia",
+		"city": "Brisbane"
+	},
+	"education": [{
+		"startTime": "1997.09",
+		"endTime": "2001.07",
+		"institute": "Beijing Forestry University",
+		"major": "Environmental Science",
+		"degree": "Bachelor of Science",
+		"instituteLocation": {
+			"country": "China",
+			"city": "Beijing"
+		},
+		"startTime": "2000",
+		"endTime": "2001",
+		"institute": "Microsoft",
+		"major": "MCSE",
+		"degree": "",
+		"instituteLocation": {
+			"country": "China",
+			"city": "Beijing"
+		}
+	}],
+	"languages": [{
+		"languageName": "Mandarin",
+		"languageLevel": "Native",
+		"languageRating": "10"
+	}, {
+		"languageName": "English",
+		"languageLevel": "Professional",
+		"languageRating": "8"
+	}],
+	"workHistory": [{
+		"startTime": "2017.03",
+		"endTime": "present",
+		"companyName": "Temando",
+		"companyWebUrl": "http://www.temando.com",
+		"workLocation": {
+			"country": "Australia",
+			"city": "Brisbane"
+		},
+		"positionTitle": "Senior Software Developer",
+		"workDetails": "",
+		"supervisorName": "",
+		"supervisorUrl": "",
+		"skillsInvolved": ["PHP", "Symfony", "Laravel", "MySQL", "NodeJS", "ReactJS"]
+	}, {
+		"startTime": "2016.03",
+		"endTime": "2017.03",
+		"companyName": "",
+		"companyWebUrl": "",
+		"workLocation": {
+			"country": "Australia",
+			"city": "Brisbane"
+		},
+		"positionTitle": "Gap year",
+		"workDetails": "Relocation to Australia",
+		"supervisorName": "",
+		"supervisorUrl": "",
+		"skillsInvolved": ["PHP", "Symfony", "Laravel", "MySQL", "NodeJS", "ReactJS"]
+	}, {
+		"startTime": "2015.03",
+		"endTime": "2016.02",
+		"companyName": "Beijing MeiyeMeiye Tech. Co. Ltd.",
+		"companyWebUrl": "http://aimeiye.cn",
+		"workLocation": {
+			"country": "China",
+			"city": "Beijing"
+		},
+		"positionTitle": "Co-Funder & CTO",
+		"workDetails": "This was a start-up company originally targeting the beauty industry, trying to implement an O2O business in China. I was responsible for all technical infrastructures and development including web platform basing on PHP, and mobile applications basing on Ionic/Cordova then native iOS/Android.",
+		"supervisorName": "",
+		"supervisorUrl": "",
+		"skillsInvolved": ["PHP", "Symfony", "Laravel", "Drupal", "MySQL", "Objective-C", "Android", "Ionic", "Cordova", "AngularJS"]
+	}, {
+		"startTime": "2013.10",
+		"endTime": "2015.03",
+		"companyName": "Beijing WuShuang Tech. Co. Ltd.",
+		"companyWebUrl": "http://agrant.cn",
+		"workLocation": {
+			"country": "China",
+			"city": "Beijing"
+		},
+		"positionTitle": "Senior Software Engineer",
+		"workDetails": "As web team leader in this online advertisement marketing company, I led development on web advertisement management platform basing on Asp.Net, made web services using WCF, JAVA and Python, and write front end using jQuery.",
+		"supervisorName": "",
+		"supervisorUrl": "",
+		"skillsInvolved": ["JAVA", "Vert.x", "C#", "Asp.NET MVC", "jQuery", "Python", "Flask", "PHP", "Wordpress", "Symfony", "Laravel", "MySQL"]
+	}, {
+		"startTime": "2004.04",
+		"endTime": "2013.09",
+		"companyName": "IBM",
+		"companyWebUrl": "https://www.ibm.com",
+		"workLocation": {
+			"country": "China",
+			"city": "Beijing"
+		},
+		"positionTitle": "Advisory Software Engineer",
+		"workDetails": "I worked in multiple IBM middleware development teams as team leader, like WebSphere Sensor Events, IBM Solutions Kit, Bank Transformation Toolkit ... This is the most important workpalce where I mastered full software development lifecycle and strong coding skills. I also took several pre-sale engagements with important customers and got significant business success as well as I was leading the solution/development teams.",
+		"supervisorName": "",
+		"supervisorUrl": "",
+		"skillsInvolved": ["JAVA", "Eclipse", "RFID", "OSGi", "JMS", "EJB", "BPM", "Agile", "Dojo"]
+	}, {
+		"startTime": "2001.07",
+		"endTime": "2003.06",
+		"companyName": "Worksoft ( Former Pactera )",
+		"companyWebUrl": "http://www.pactera.com/en",
+		"workLocation": {
+			"country": "China",
+			"city": "Beijing"
+		},
+		"positionTitle": "IT Specialist",
+		"workDetails": "This is my first job, a memorable period with that I grew my basic IT skills on IT infrastructure, Network Devices and software development.",
+		"supervisorName": "",
+		"supervisorUrl": "",
+		"skillsInvolved": ["JAVA", "DB2", "Lotus Notes/Domino", "Networking"]
+	}],
+	"industries": [{
+		"industryName": "Software Engineering",
+		"industryYears": "16",
+		"industryDetails": ""
+	}, {
+		"industryName": "Internet Advertisement",
+		"industryYears": "2",
+		"industryDetails": ""
+	}, {
+		"industryName": "Internet of Things",
+		"industryYears": "5",
+		"industryDetails": ""
+	}, {
+		"industryName": "Logistics",
+		"industryYears": "2",
+		"industryDetails": ""
+	}]
+}
