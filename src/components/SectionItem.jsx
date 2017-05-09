@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 class SectionItem extends Component {
     render() {
@@ -14,4 +15,12 @@ class SectionItem extends Component {
         );
     }
 }
+
+SectionItem.propTypes = PropTypes.shape({
+    title: PropTypes.string,
+    details: PropTypes.string
+});
+
+SectionItem.defaultProps = {};
+
 export default SectionItem;

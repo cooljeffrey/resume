@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 import SectionItem from "./SectionItem.jsx";
 import WorkItem from "./WorkItem.jsx";
@@ -6,7 +7,7 @@ import IndustryItem from "./IndustryItem.jsx";
 import InfoList from "./InfoList.jsx";
 import SkillSet from "./SkillSet.jsx";
 
-class Section extends Component {
+class AsideSection extends Component {
     render() {
         let itemsDOM = "";
 
@@ -41,4 +42,12 @@ class Section extends Component {
         );
     }
 }
-export default Section;
+
+AsideSection.propTypes = {
+    type: PropTypes.oneOf(["info", "skills", "education", "languages"]),
+    items: PropTypes.arrayOf(PropTypes.object)
+};
+
+AsideSection.defaultProps = { type: "info", items: [] };
+
+export default AsideSection;

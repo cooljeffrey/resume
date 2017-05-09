@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import PropTypes from "prop-types";
 import AnimatedBar from "./AnimatedBar.jsx";
 
 class SkillSet extends Component {
@@ -35,4 +35,18 @@ class SkillSet extends Component {
     );
   }
 }
+
+SkillSet.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      level: PropTypes.string.isRequired,
+      years: PropTypes.string,
+      rating: PropTypes.number.isRequired
+    })
+  )
+};
+
+SkillSet.defaultProps = [];
+
 export default SkillSet;

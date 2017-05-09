@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 class Header extends Component {
     render() {
@@ -33,4 +34,15 @@ class Header extends Component {
         );
     }
 }
+
+Header.propTypes = {
+    name: PropTypes.string,
+    desc: PropTypes.string,
+    headshot: PropTypes.string,
+    linkedin: PropTypes.string,
+    github: PropTypes.string
+};
+
+Header.defaultProps = {};
+
 export default Header;

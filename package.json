@@ -5,6 +5,7 @@
   "homepage": "https://cooljeffrey.github.io/resume",
   "dependencies": {
     "axios": "^0.16.1",
+    "prop-types": "^15.5.8",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-motion": "^0.5.0",

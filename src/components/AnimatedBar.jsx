@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import PropTypes from "prop-types";
 import { Motion, spring } from "react-motion";
 import VisibilitySensor from "react-visibility-sensor";
 
@@ -9,7 +9,12 @@ class AnimatedBar extends Component {
     this.state = { visible: false, value: props.value };
     this.visibilityChanged = this.visibilityChanged.bind(this);
   }
-
+  
+  /**
+   * On the event that the bar visibility changed
+   * @param  {Boolean} isVisible is the div below the bar visible ?
+   * 
+   */
   visibilityChanged(isVisible) {
     if (isVisible !== this.state.visible) {
       this.setState({ visible: isVisible });
@@ -36,7 +41,7 @@ class AnimatedBar extends Component {
               className="level-bar-inner"
               data-level={interpolatingStyle.x + "%"}
               style={{
-                width: interpolatingStyle.x + "%"
+                width: interpolatingStyle.x / this.props.target * 100 + "%"
               }}
             />
             <VisibilitySensor
@@ -50,4 +55,15 @@ class AnimatedBar extends Component {
     );
   }
 }
+
+AnimatedBar.propTypes = {
+  value: PropTypes.number,
+  target: PropTypes.number
+};
+
+AnimatedBar.defaultProps = {
+  value: 0,
+  target: 100
+};
+
 export default AnimatedBar;

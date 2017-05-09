@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 import SectionItem from "./SectionItem.jsx";
 import WorkItem from "./WorkItem.jsx";
@@ -35,4 +36,12 @@ class Section extends Component {
         );
     }
 }
+
+Section.propTypes = {
+    type: PropTypes.oneOf(["industry", "experience", "general"]),
+    items: PropTypes.arrayOf(PropTypes.object)
+};
+
+Section.defaultProps = { type: "general", items: [] };
+
 export default Section;

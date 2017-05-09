@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
+
 import logo from "./logo.svg";
 import "./App.css";
 
@@ -17,7 +19,7 @@ class App extends Component {
     const username = this.props.username;
 
     const _this = this;
-    
+
     this.fetchProfile(username)
       .then(response => {
         _this.setState({
@@ -85,5 +87,11 @@ class App extends Component {
     }
   }
 }
+
+App.propTypes = {
+  username: PropTypes.string
+};
+
+App.defaultProps = { username: "jeffrey" };
 
 export default App;

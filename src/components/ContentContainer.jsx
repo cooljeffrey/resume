@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 import Section from "./Section.jsx";
 import AsideSection from "./AsideSection.jsx";
@@ -55,4 +56,11 @@ class ContentContainer extends Component {
 		);
 	}
 }
+
+ContentContainer.propTypes = {
+	profile: PropTypes.object
+};
+
+ContentContainer.defaultProps = {};
+
 export default ContentContainer;
