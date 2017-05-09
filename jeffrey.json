@@ -77,7 +77,8 @@
 		"instituteLocation": {
 			"country": "China",
 			"city": "Beijing"
-		},
+		}
+	}, {
 		"startTime": "2000",
 		"endTime": "2001",
 		"institute": "Microsoft",
@@ -90,12 +91,12 @@
 	}],
 	"languages": [{
 		"languageName": "Mandarin",
-		"languageLevel": "Native",
-		"languageRating": "10"
+		"languageLevel": "Native Speaker",
+		"languageRating": 10
 	}, {
 		"languageName": "English",
 		"languageLevel": "Professional",
-		"languageRating": "8"
+		"languageRating": 7
 	}],
 	"workHistory": [{
 		"startTime": "2017.03",
