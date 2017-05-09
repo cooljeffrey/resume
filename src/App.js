@@ -1,3 +1,5 @@
+// @flow
+
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
@@ -11,9 +13,21 @@ import ContentContainer from "./components/ContentContainer.jsx";
 import Footer from "./components/Footer.jsx";
 
 class App extends Component {
-  constructor(props) {
+  state: {
+    state: string,
+    data?: Object,
+    error?: Object
+  };
+
+  static defaultProps: {
+    username: string
+  };
+
+  constructor(props: Object) {
     super(props);
-    this.state = { state: "pending", data: null, error: null };
+    this.state = {
+      state: "pending"
+    };
   }
 
   componentDidMount() {
@@ -37,13 +51,16 @@ class App extends Component {
       });
   }
 
-  fetchProfile(username) {
+  fetchProfile(username: string) {
     return Services.getUserProfile(username);
   }
 
-  render() {
+  render(): ?React$Element<any> {
     if (this.state.state === "loaded") {
       const profile = this.state.data;
+      if (!profile) {
+        return <div className="App" />;
+      }
       return (
         <div className="App">
           <NavigationBar />
@@ -68,7 +85,11 @@ class App extends Component {
           <p className="App-intro">
             Oooooops, something bad happended
             <blockquote>
-              <p>{this.state.error.message}</p>
+              <p>
+                {this.state.error && this.state.error.message
+                  ? this.state.error.message
+                  : ""}
+              </p>
             </blockquote>
           </p>
           <Footer />

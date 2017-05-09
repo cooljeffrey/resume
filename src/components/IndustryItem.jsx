@@ -22,11 +22,11 @@ class IndustryItem extends SectionItem {
     }
 }
 
-IndustryItem.propTypes = PropTypes.shape({
+IndustryItem.propTypes = {
     industryName: PropTypes.string,
     industryYears: PropTypes.string,
     industryDetails: PropTypes.string
-});
+};
 
 IndustryItem.defaultProps = {};
 
