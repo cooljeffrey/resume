@@ -7,8 +7,8 @@ class SkillSet extends Component {
     let itemsDOM = "";
 
     itemsDOM = Array.isArray(this.props.items)
-      ? this.props.items.map(item => (
-          <div className="item">
+      ? this.props.items.map((item, index) => (
+          <div key={index} className="item">
             <h3 className="level-title">
               {item.title}
               <span

@@ -22,7 +22,7 @@ class NavigationBar extends Component {
             <ul className="nav navbar-nav navbar-right">
                 <li><a href="https://cooljeffrey.github.io">Home</a></li>
                 <li className="navlinks-container" style={navLinksStyle}>
-                  <a className="navlinks-parent" href="javascript:void(0)">About Me</a>
+                  <a className="navlinks-parent" href="#">About Me</a>
                   <div className="navlinks-children">
                     <a href="/aboutme">Profile</a>
                     <a href="https://cooljeffrey.github.io/resume">Resume</a>

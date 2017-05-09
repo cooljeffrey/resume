@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 
 import SectionItem from "./SectionItem.jsx";
-import WorkItem from "./WorkItem.jsx";
-import IndustryItem from "./IndustryItem.jsx";
 import InfoList from "./InfoList.jsx";
 import SkillSet from "./SkillSet.jsx";
+import EducationItem from "./EducationItem.jsx";
+import LanguageItem from "./LanguageItem.jsx";
 
 class AsideSection extends Component {
     render() {
@@ -17,15 +17,26 @@ class AsideSection extends Component {
             itemsDOM = <SkillSet items={this.props.items} />;
         } else if (this.props.type && this.props.type === "education") {
             itemsDOM = Array.isArray(this.props.items)
-                ? this.props.items.map(item => <WorkItem item={item} />)
+                ? this.props.items.map((item, index) => (
+                      <EducationItem key={index} item={item} />
+                  ))
                 : "";
         } else if (this.props.type && this.props.type === "languages") {
             itemsDOM = Array.isArray(this.props.items)
-                ? this.props.items.map(item => <WorkItem item={item} />)
+                ? this.props.items.map((item, index) => (
+                      <LanguageItem key={index} item={item} />
+                  ))
                 : "";
+            itemsDOM = (
+                <ul className="list-unstyled">
+                    {itemsDOM}
+                </ul>
+            );
         } else {
             itemsDOM = Array.isArray(this.props.items)
-                ? this.props.items.map(item => <SectionItem item={item} />)
+                ? this.props.items.map((item, index) => (
+                      <SectionItem key={index} item={item} />
+                  ))
                 : "";
         }
 
@@ -45,7 +56,9 @@ class AsideSection extends Component {
 
 AsideSection.propTypes = {
     type: PropTypes.oneOf(["info", "skills", "education", "languages"]),
-    items: PropTypes.arrayOf(PropTypes.object)
+    title: PropTypes.string,
+    items: PropTypes.arrayOf(PropTypes.object),
+    content: PropTypes.string
 };
 
 AsideSection.defaultProps = { type: "info", items: [] };

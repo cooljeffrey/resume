@@ -8,6 +8,7 @@ import Services from "./services.js";
 import Header from "./components/Header.jsx";
 import NavigationBar from "./components/NavigationBar.jsx";
 import ContentContainer from "./components/ContentContainer.jsx";
+import Footer from "./components/Footer.jsx";
 
 class App extends Component {
   constructor(props) {
@@ -54,6 +55,7 @@ class App extends Component {
             github={profile.social.github.url}
           />
           <ContentContainer profile={profile} />
+          <Footer />
         </div>
       );
     } else if (this.state.state === "error") {
@@ -69,6 +71,7 @@ class App extends Component {
               <p>{this.state.error.message}</p>
             </blockquote>
           </p>
+          <Footer />
         </div>
       );
     } else {
@@ -82,6 +85,7 @@ class App extends Component {
             <img src={logo} className="App-logo" alt="logo" />
             Loading, please wait ...
           </p>
+          <Footer />
         </div>
       );
     }

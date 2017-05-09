@@ -6,10 +6,10 @@ class InfoList extends Component {
     let itemsDOM = "";
 
     itemsDOM = Array.isArray(this.props.items)
-      ? this.props.items.map(item => {
+      ? this.props.items.map((item, index) => {
           if (item.cssClass.indexOf("link") >= 0) {
             return (
-              <li>
+              <li key={index}>
                 <i className={item.cssClass} />
                 <span className="sr-only">
                   {item.title + ":"}
@@ -19,7 +19,7 @@ class InfoList extends Component {
             );
           } else {
             return (
-              <li>
+              <li key={index}>
                 <i className={item.cssClass} />
                 <span className="sr-only">
                   {item.title + ":"}

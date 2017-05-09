@@ -49,7 +49,21 @@ class ContentContainer extends Component {
 					</div>
 					<div className="secondary col-md-4 col-sm-12 col-xs-12">
 						<AsideSection type="info" items={infoListItems} />
-						<AsideSection type="skills" items={profile.skills} />
+						<AsideSection
+							type="skills"
+							title="Skills"
+							items={profile.skills}
+						/>
+						<AsideSection
+							type="education"
+							title="Education"
+							items={profile.education}
+						/>
+						<AsideSection
+							type="languages"
+							title="Languages"
+							items={profile.languages}
+						/>
 					</div>
 				</div>
 			</div>

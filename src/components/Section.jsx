@@ -11,15 +11,21 @@ class Section extends Component {
 
         if (this.props.type && this.props.type === "industry") {
             itemsDOM = Array.isArray(this.props.items)
-                ? this.props.items.map(item => <IndustryItem item={item} />)
+                ? this.props.items.map((item, index) => (
+                      <IndustryItem key={index} item={item} />
+                  ))
                 : "";
         } else if (this.props.type && this.props.type === "experience") {
             itemsDOM = Array.isArray(this.props.items)
-                ? this.props.items.map(item => <WorkItem item={item} />)
+                ? this.props.items.map((item, index) => (
+                      <WorkItem key={index} item={item} />
+                  ))
                 : "";
         } else {
             itemsDOM = Array.isArray(this.props.items)
-                ? this.props.items.map(item => <SectionItem item={item} />)
+                ? this.props.items.map((item, index) => (
+                      <SectionItem key={index} item={item} />
+                  ))
                 : "";
         }
 
@@ -38,7 +44,7 @@ class Section extends Component {
 }
 
 Section.propTypes = {
-    type: PropTypes.oneOf(["industry", "experience", "general"]),
+    type: PropTypes.oneOf(["about", "industry", "experience", "general"]),
     items: PropTypes.arrayOf(PropTypes.object)
 };
 
