@@ -20,7 +20,7 @@ class App extends Component {
   };
 
   static defaultProps: {
-    username: string
+    username: "jeffrey"
   };
 
   constructor(props: Object) {
@@ -31,6 +31,10 @@ class App extends Component {
   }
 
   componentDidMount() {
+    /**
+     * The username of the profile
+     * @type {string}
+     */
     const username = this.props.username;
 
     const _this = this;
@@ -59,7 +63,19 @@ class App extends Component {
     if (this.state.state === "loaded") {
       const profile = this.state.data;
       if (!profile) {
-        return <div className="App" />;
+        return (
+          <div className="App">
+            <NavigationBar />
+            <div className="App-header">
+              <img src={logo} className="App-logo" alt="logo" />
+            </div>
+            <p className="App-intro">
+              <img src={logo} className="App-logo" alt="logo" />
+              Loading, please wait ... ...
+            </p>
+            <Footer />
+          </div>
+        );
       }
       return (
         <div className="App">
@@ -112,11 +128,5 @@ class App extends Component {
     }
   }
 }
-
-App.propTypes = {
-  username: PropTypes.string
-};
-
-App.defaultProps = { username: "jeffrey" };
 
 export default App;
