@@ -19,6 +19,10 @@ class App extends Component {
     error?: Object
   };
 
+  props: {
+    username: string
+  };
+
   static defaultProps: {
     username: "jeffrey"
   };
@@ -59,7 +63,7 @@ class App extends Component {
     return Services.getUserProfile(username);
   }
 
-  render(): ?React$Element<any> {
+  render() {
     if (this.state.state === "loaded") {
       const profile = this.state.data;
       if (!profile) {

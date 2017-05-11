@@ -1,0 +1,14 @@
+{
+	"source": "./src",
+	"destination": "./doc",
+	"plugins": [{
+		"name": "esdoc-flow-plugin"
+	}],
+	"includes": [".*\\.js", ".*\\.jsx"],
+	"index": "./README.md",
+	"package": "./package.json",
+	"experimentalProposal": {
+		"classProperties": true,
+		"objectRestSpread": true
+	}
+}
