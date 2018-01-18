@@ -34,7 +34,7 @@
 		"years": "12",
 		"rating": 90
 	}, {
-		"title": "Javascript, jQuery & AngularJS",
+		"title": "Javascript, jQuery, ReactJS & AngularJS",
 		"level": "Expert",
 		"years": "5",
 		"rating": 90
@@ -49,7 +49,7 @@
 		"years": "3",
 		"rating": 80
 	}, {
-		"title": "PHP, Symfony, Laravel & Drupal",
+		"title": "PHP, ZendFramework, Symfony & Drupal",
 		"level": "Expert",
 		"years": "3",
 		"rating": 90
@@ -107,11 +107,11 @@
 			"country": "Australia",
 			"city": "Brisbane"
 		},
-		"positionTitle": "Senior Software Developer",
-		"workDetails": "",
+		"positionTitle": "Senior Developer",
+		"workDetails": "I am a key member of Professional Service Operation team, responsible for custom integration solution development and legacy system maintainence. I build SOAP services and web applications using PHP, NodeJS, TypeScript and ReactJS. The major customers I worked with are Myer, Quantium, Cox & Cox, Apparel21 ...",
 		"supervisorName": "",
 		"supervisorUrl": "",
-		"skillsInvolved": ["PHP", "Symfony", "Laravel", "MySQL", "NodeJS", "ReactJS"]
+		"skillsInvolved": ["PHP", "ZendFramework", "Symfony", "MySQL", "NodeJS", "ReactJS", "SOAP"]
 	}, {
 		"startTime": "2016.03",
 		"endTime": "2017.03",
